@@ -13,5 +13,7 @@ Made using HTML, CSS, JS
 ## TODO:
 * Bakgrunn
 * Farger
+* Logo
+* Tekst
 * Kolonner
 * Mer interaktivt
