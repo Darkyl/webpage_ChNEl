@@ -35,6 +35,9 @@ img {
   flex-basis: 60%; /*Similar to width*/
 }
 
+.call-out-text:nth-child(1) {background-color: white}
+.call-out-text:nth-child(2) {background-color: white}
+
 .call-out-img {
   padding: 0px;
   box-sizing: border-box;
@@ -42,8 +45,15 @@ img {
   flex-basis: 40%; /*Similar to width*/
 }
 
-.call-out-text:nth-child(1) {background-color: white}
-.call-out-text:nth-child(2) {background-color: white}
+.call-out-half {
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  flex-basis: 49%; /*Similar to width*/
+}
+
+.call-out-half:nth-child(1) {background-color: grey}
+.call-out-half:nth-child(2) {background-color: grey}
 
 .separator {
     margin: 0;
