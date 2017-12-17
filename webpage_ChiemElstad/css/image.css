@@ -80,3 +80,51 @@ hr {
 h2 {
   text-align: center;
 }
+
+/*THIS IS THE GRID VS STYLE BOX*/
+
+#blocks {
+  margin: 20px;
+}
+
+article {
+  background: #ffffff;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+article h2 {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 769px) {
+  #choose_stack_grid {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+   #blocks {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+
+   article {
+     flex: 0 1 32%;
+     transition: flex-basis 0.2s linear;
+   }
+
+   article.stack{
+     flex: 0 1 100%;
+   }
+}

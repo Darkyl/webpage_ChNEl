@@ -52,52 +52,39 @@
     </div>
   </nav>
 
-  <div class="bgimg">
-    <div class="text-on-background">
-      <h1>Blogg</h1>
-      <hr>
-      <h3>Les vår nyhetsfeed</h3>
- </div>
 
-  </div>
-  <!--Container Body-->
-  <div class="body">
-    <div class="column-layout">
-      <div class="main-column">
-        <h1>Er du nysjerrig på hvem vi er og hva vi kan hjelpe deg med?</h1>
-        <p></p>
-      </div>
-    </div>
-
-<!-- TODO: MAKE IMAGE GO BEFORE SUMMARY IN RESPONSIVE MODE -->
-
-<div class="call-outs-container">
-  <div class="call-out-half">
-    <h4>F one</h4>
-      <p> somehing</p>
-  </div>
-  <div class="call-out-half">
-    <h4>F two</h4>
-      <p>something</p>
-  </div>
+<div style="margin: 20px;" id="choose_stack_grid">
+    <span> Layout: </span>
+    <a href="#" class="stack">Stack</a>
+    <a href="#" class="grid">Grid</a>
 </div>
 
-<div class="call-outs-container">
-  <div class="call-out">
-    <h4>F one</h4>
-      <p> somehing</p>
-  </div>
-  <div class="call-out">
-    <h4>F two</h4>
-      <p>something</p>
-  </div>
-  <div class="call-out">
-    <h4>F three</h4>
-    <p>something</p>
-  </div>
-</div>
-
-
+<section id="blocks">
+  <article>
+    <h2>I pity the fool...</h2>
+    <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+  </article>
+  <article>
+    <h2>Get to the chopper...</h2>
+    <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+  </article>
+  <article>
+    <h2>What's a horse doing on a spaceship...?</h2>
+    <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+  </article>
+  <article>
+    <h2>I pity the fool...</h2>
+    <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+  </article>
+  <article>
+    <h2>Get to the chopper...</h2>
+    <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+  </article>
+  <article>
+    <h2>What's a horse doing on a spaceship...?</h2>
+    <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, nec vestibulum nibh. Curabitur ultrices, diam non ullamcorper blandit, nunc lacus ornare nisi, egestas rutrum magna est id nunc. Pellentesque imperdiet malesuada quam, et rhoncus eros auctor eu. Nullam vehicula metus ac lacus rutrum nec fermentum urna congue.</p>
+  </article>
+</section>
 
 
 
@@ -116,9 +103,17 @@
     </section>
   </footer>
 
-  <!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Change from gird to stacked layout-->
+  <script>
+    $("a.stack").on("click", function(){
+      $("article").addClass("stack");
+    });
+    $("a.grid").on("click", function(){
+      $("article").removeClass("stack");
+    });
+  </script>
+
 </body>
 </html>
